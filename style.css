@@ -1,4 +1,8 @@
 /* CORE STYLING ELEMENTS */
+body {
+  background-color: white;
+}
+
 .main {
   margin-top: 30px;
 }
@@ -15,8 +19,11 @@
 }
 
 .header-text {
+  display: flex;
+  margin-left: 191px;
   font-size: 20px;
   line-height: 32px;
+  width: 40%;
 }
 
 .navigation {
@@ -31,12 +38,29 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 25px;
   padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 li {
-  float: right;
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  gap: 80px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  transition-delay: 0.3s;
 }
 
 .navigation__header {
@@ -44,7 +68,7 @@ li {
 }
 
 .btn-nav-all {
-  background-color: white;
+  background-color: HEX #0C2131;
   border: none;
   cursor: pointer;
 }
@@ -59,14 +83,24 @@ li {
 }
 
 .img {
+  display: flex;
   flex-wrap: wrap;
   height: 200px;
   width: auto;
+  margin-left: 10%;
 }
 
 .about-me-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.about-me-text_ {
+  display: flex;
+  font-size: auto;
+  width: 40%;
+  margin-left: 134px;
+  line-height: 28.8px;
 }
 
 .get-in-touch-container {
@@ -74,6 +108,15 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.svg-container-skills-icons {
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  text-align: center;
 }
 
 .get-in-touch-container {
@@ -99,5 +142,15 @@ li {
 }
 
 footer {
+  min-height: 100px;
+  width: 100%;
   background-color: black;
+  align-items: center;
+}
+
+.social-buttons__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
