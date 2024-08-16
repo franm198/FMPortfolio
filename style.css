@@ -1,6 +1,17 @@
 /* CORE STYLING ELEMENTS */
-header {
-  flex-wrap: wrap;
+.main {
+  margin-top: 30px;
+}
+
+#bigHeading {
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 153.6px;
+}
+
+.header-group {
+  margin-top: 140px;
 }
 
 .header-text {
@@ -12,43 +23,39 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
 }
 
 .navigation__header {
   gap: 80px;
 }
 
-.nav-btn-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-#bigBottomHeading {
-  font-size: 128px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.contact {
-  align-items: center;
-  font-size: 24px;
-  line-height: 28.8px;
-}
-
-#bigHeading {
-  font-size: 128px;
-  font-weight: 400;
-  text-align: center;
+.btn-nav-all {
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
   font-size: 48px;
   font-family: "Cormorant", serif;
   margin-left: 134px;
+}
+.navigation__header--footer, .header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
+  margin-left: 0;
 }
 
 .img {
@@ -60,4 +67,37 @@ header {
 .about-me-container {
   display: flex;
   justify-content: space-between;
+}
+
+.get-in-touch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.get-in-touch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bigBottomHeading {
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact {
+  font-size: 24px;
+  line-height: 28.8px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 40px;
+  background-color: white;
+  width: 321px;
+}
+
+footer {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

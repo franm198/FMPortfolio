@@ -1,18 +1,80 @@
 /* CORE STYLING ELEMENTS */
-@import "./styling/pagesubheaderstyle.scss";
-@import "./styling/navbarstyle.scss";
-@import "./styling/getintouch.scss";
+
+.main {
+    margin-top: 30px;
+}
+
+// STYLING FOR LARGE "JUNIOR SOFTWARE DEVELOPER." SECTION // 
 
 #bigHeading {
-font-size: 128px;
-font-weight: 400;
-text-align: center;
+    font-size: 128px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 153.6px;
+    }
+
+.header-group {
+    margin-top: 140px;
 }
+
+.header-text {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+ // NAVIGATION BAR STYLING \\
+
+ .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: right;
+}
+
+.navigation__header {
+   gap: 80px;
+
+ }
+
+// .nav-btn-container {
+//    display:flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: center;
+//    gap:80px;
+//    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//    margin-right: 10%;
+// }
+
+.btn-nav-all {
+   background-color: white;
+   border: none;
+   cursor: pointer;
+}
+ 
+
 
 .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
 font-size: 48px;
 font-family: "Cormorant", serif;
 margin-left: 134px;
+&--footer {
+    margin-left: 0;
+}
 }
 
 .img {
@@ -26,3 +88,43 @@ margin-left: 134px;
     justify-content: space-between;
 
  }
+
+ .get-in-touch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+// Get in Touch section //
+
+.get-in-touch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bigBottomHeading {
+    font-size: 128px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.contact {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+     font-size: 24px;
+    line-height: 28.8px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 40px;
+    background-color: white;
+    width: 321px;
+}
+
+//footerstyle section //
+
+footer {
+    background-color: black;
+}
