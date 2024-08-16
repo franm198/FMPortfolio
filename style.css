@@ -21,8 +21,8 @@ nav {
 .nav-btn-container {
   display: flex;
   gap: 80px;
-  font-family: Inter;
-  align-items: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-items: flex-end;
 }
 
 #bigHeading {
@@ -31,7 +31,7 @@ nav {
   text-align: center;
 }
 
-._header {
+.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
   font-size: 48px;
   font-family: "Cormorant", serif;
   margin-left: 134px;

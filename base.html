@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesca Mant - Junior Software Developer</title>
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navigation">
-            <h1 class="navigation _header">FRANCESCA MANT.</h1>
+            <h1 class="navigation__header">FRANCESCA MANT.</h1>
             <div class="nav-btn-container">   
                     <button class="btn nav">About</button>
                     <button class="btn nav">Portfolio</button>
@@ -19,12 +19,12 @@
             </div>
     </nav>
     <header class="header">
-        <h2 id="bigHeading" class="header _header">Junior Software Developer.</h2>
+        <h2 id="bigHeading" class="header__title">Junior Software Developer.</h2>
         <p class="header-text">Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis tempor. </p>
     </header>
 
     <article class="about-me-article">
-        <h2 class="about-me-article _header">ABOUT.</h2>
+        <h2 class="about-me-article__header">ABOUT.</h2>
         <div class="about-me-container">
             
             <p class="about-me-text_">Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices aliquet. Velit, tincidunt sed sed proin pellentesque dictum pulvinar. Arcu diam massa elementum tempor lectus. Aliquam lacus lacus diam eget quisque purus etiam mi, curabitur. Imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. Quis blandit quisque sed diam at tellus sagittis. 
@@ -35,28 +35,46 @@
     </article>
     
     <section class="skills-technical-section">
-        <h2 class="skills-technical-section _header">SKILLS.</h2>
+        <h2 class="skills-technical-section__header">SKILLS.</h2>
         <p class="skills-technical-section_bodyText">Egestas dictumst enim dui ante nisl risus commodo. Pellentesque dignissim praesent purus in neque erat et. Cras donec ut orci eget neque bibendum cras. Vitae, ultricies arcu pretium duis.
         </p>
-        <div class="svg-container">
-            <svg width="100" height="100" xmlns=""
-            
+        <div class="svg-container-skills-icons">
+            <svg class="skill-icons__icon" width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M65.8175 30.6867L36.5723 1.2703C35.7627 0.456901 34.665 0 33.5206 0C32.3762 0 31.2786 0.456901 30.469 1.2703L24.3881 7.38067L32.0931 15.1288C36.14 13.7542 39.9716 17.6508 38.5823 21.6979L46.0091 29.1663C51.1283 27.3916 55.1588 33.8284 51.3138 37.6919C47.3521 41.6757 40.8136 37.2603 42.9387 32.0763L36.0069 25.1147V43.4398C39.7906 45.3257 39.336 49.7337 37.3649 51.7113C36.4018 52.6792 35.096 53.2229 33.7345 53.2229C32.3729 53.2229 31.0671 52.6792 30.1041 51.7113C27.4764 49.0644 28.4485 44.6565 31.7865 43.2894V24.7914C28.6758 23.5116 28.1075 20.1684 28.9989 18.0238L21.403 10.3764L1.3449 30.5498C0.535665 31.3638 0.0810547 32.4676 0.0810547 33.6186C0.0810547 34.7695 0.535665 35.8734 1.3449 36.6873L30.5991 66.1037C31.4084 66.917 32.5058 67.3738 33.65 67.3738C34.7942 67.3738 35.8915 66.917 36.7009 66.1037L65.8175 36.8241C66.6267 36.0102 67.0813 34.9064 67.0813 33.7554C67.0813 32.6045 66.6267 31.5006 65.8175 30.6867Z" fill="black"
+                />
+            </svg>
         </div>
     </section>
 
     <section class="my-portfolio-section">
-        <h2 class="my-portfolio-section _header">PORTFOLIO.</h2>
+        <h2 class="my-portfolio-section__header">PORTFOLIO.</h2>
         <div>portfolio items here on grid?</div>
     </section>
     
     <section class="get-in-touch">
-        <h2 id="bigBottomHeading" class="get-in-touch _header">GET IN TOUCH.</h2>
+        <h2 id="bigBottomHeading" class="get-in-touch__header">GET IN TOUCH.</h2>
         <button class="btn contact">Contact</button>
     </section>
 
     <footer>
         <div class="social-buttons__footer">
-            SVGs here with links
+            <svg class="github_SVG__footer-interactive" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="55" height="55" rx="27.5" fill="white"/>
+                <g clip-path="url(#clip0_3569_759)">
+                <path d="M20.268 40H14.463V21.306H20.268V40ZM17.362 18.756C15.506 18.756 14 17.218 14 15.362C14 14.4703 14.3542 13.6152 14.9847 12.9847C15.6152 12.3542 16.4703 12 17.362 12C18.2537 12 19.1088 12.3542 19.7393 12.9847C20.3698 13.6152 20.724 14.4703 20.724 15.362C20.724 17.218 19.218 18.756 17.362 18.756ZM41.994 40H36.202V30.9C36.202 28.731 36.158 25.95 33.184 25.95C30.166 25.95 29.703 28.306 29.703 30.744V40H23.904V21.306H29.471V23.856H29.552C30.327 22.387 32.22 20.837 35.044 20.837C40.919 20.837 41.999 24.706 41.999 29.731V40H41.994Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3569_759">
+                <rect width="32" height="32" fill="white" transform="translate(12 12)"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <svg class="github_SVG__footer-interactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9875 2.38428C8.25938 2.38115 2 8.6374 2 16.3593C2 22.4655 5.91563 27.6561 11.3688 29.5624C12.1031 29.7468 11.9906 29.2249 11.9906 28.8686V26.4468C7.75 26.9436 7.57813 24.1374 7.29375 23.6686C6.71875 22.6874 5.35938 22.4374 5.76563 21.9686C6.73125 21.4718 7.71563 22.0936 8.85625 23.778C9.68125 24.9999 11.2906 24.7936 12.1063 24.5905C12.2844 23.8561 12.6656 23.1999 13.1906 22.6905C8.79688 21.903 6.96563 19.2218 6.96563 16.0343C6.96563 14.4874 7.475 13.0655 8.475 11.9187C7.8375 10.028 8.53438 8.40928 8.62813 8.16865C10.4438 8.00615 12.3313 9.46865 12.4781 9.58428C13.5094 9.30615 14.6875 9.15928 16.0063 9.15928C17.3313 9.15928 18.5125 9.3124 19.5531 9.59365C19.9063 9.3249 21.6563 8.06865 23.3438 8.22178C23.4344 8.4624 24.1156 10.0437 23.5156 11.9093C24.5281 13.0593 25.0438 14.4937 25.0438 16.0437C25.0438 19.2374 23.2 21.9218 18.7938 22.6968C19.1712 23.0679 19.4708 23.5106 19.6753 23.9988C19.8797 24.4871 19.9848 25.0112 19.9844 25.5405V29.0561C20.0094 29.3374 19.9844 29.6155 20.4531 29.6155C25.9875 27.7499 29.9719 22.5218 29.9719 16.3624C29.9719 8.6374 23.7094 2.38428 15.9875 2.38428Z" fill="black"/>
+            </svg>
+            <svg class="CV_SVG__footer-interactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5737 20.5203C14.962 21.4818 14.3751 22.4225 13.0599 23.3363C12.3564 23.8294 10.7371 24.7929 8.4355 24.7929C4.04431 24.7929 0.5 21.6004 0.5 15.9876C0.5 11.0823 3.83406 7.20728 8.52913 7.20728C10.4313 7.20728 12.1213 7.86484 13.3658 8.85128C14.5167 9.7669 15.0557 10.6828 15.526 11.5048L12.2397 13.1468C12.0046 12.6077 11.7216 12.0438 10.9952 11.434C10.1962 10.7993 9.39894 10.612 8.71644 10.612C6.04012 10.612 4.63119 13.101 4.63119 15.871C4.63119 19.5109 6.48744 21.3175 8.71644 21.3175C10.8766 21.3175 11.7464 19.8148 12.3086 18.8533L15.5737 20.5204V20.5203ZM27.0859 7.72346H31.5L25.7477 24.2997H21.5229L15.8414 7.72346H20.2554L23.6831 19.511L27.0859 7.72346Z" fill="black"/>
+            </svg>
         </div>
     </footer>
 </body>
