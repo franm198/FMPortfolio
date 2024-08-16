@@ -1,6 +1,7 @@
 /* CORE STYLING ELEMENTS */
 @import "./styling/pagesubheaderstyle.scss";
 @import "./styling/navbarstyle.scss";
+@import "./styling/getintouch.scss";
 
 #bigHeading {
 font-size: 128px;
@@ -19,12 +20,6 @@ margin-left: 134px;
     height: 200px;
     width: auto;
 }
-
-#bigBottomHeading {
-    font-size: 128px;
-    font-weight: 400;
-    text-align: center;
-  }
 
  .about-me-container {
     display:flex;

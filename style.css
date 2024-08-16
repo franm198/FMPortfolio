@@ -11,18 +11,32 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
-nav {
-  flex: 1;
-  display: flex;
+.navigation__header {
+  gap: 80px;
 }
 
 .nav-btn-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 80px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  align-items: flex-end;
+}
+
+#bigBottomHeading {
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact {
+  align-items: center;
+  font-size: 24px;
+  line-height: 28.8px;
 }
 
 #bigHeading {
@@ -41,12 +55,6 @@ nav {
   flex-wrap: wrap;
   height: 200px;
   width: auto;
-}
-
-#bigBottomHeading {
-  font-size: 128px;
-  font-weight: 400;
-  text-align: center;
 }
 
 .about-me-container {
