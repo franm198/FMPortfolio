@@ -1,30 +1,55 @@
 /* CORE STYLING ELEMENTS */
+header {
+  flex-wrap: wrap;
+}
+
+.header-text {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+}
+
+.nav-btn-container {
+  display: flex;
+  gap: 80px;
+  font-family: Inter;
+  align-items: right;
+}
 
 #bigHeading {
-font-size: 128px;
-font-weight: 400;
-text-align: center;
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
 }
 
 ._header {
-font-size: 48px;
-font-family: "Cormorant", serif;
+  font-size: 48px;
+  font-family: "Cormorant", serif;
+  margin-left: 134px;
 }
 
 .img {
-    flex-wrap: wrap;
-    height: 200px;
-    width: auto;
+  flex-wrap: wrap;
+  height: 200px;
+  width: auto;
 }
 
 #bigBottomHeading {
-   font-size: 128px;
-   font-weight: 400;
-   text-align: center;
- }
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
+}
 
- .about-me-container {
-    display:flex;
-    justify-content: space-between;
-    
- }
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

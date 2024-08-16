@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+}
+
+.nav-btn-container {
+  display: flex;
+  gap: 80px;
+  font-family: Inter;
+  align-items: right;
+}/*# sourceMappingURL=navbarstyle.css.map */

@@ -1,0 +1,33 @@
+/* CORE STYLING ELEMENTS */
+@import "./styling/pagesubheaderstyle.scss";
+@import "./styling/navbarstyle.scss";
+
+#bigHeading {
+font-size: 128px;
+font-weight: 400;
+text-align: center;
+}
+
+._header {
+font-size: 48px;
+font-family: "Cormorant", serif;
+margin-left: 134px;
+}
+
+.img {
+    flex-wrap: wrap;
+    height: 200px;
+    width: auto;
+}
+
+#bigBottomHeading {
+    font-size: 128px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+ .about-me-container {
+    display:flex;
+    justify-content: space-between;
+
+ }
