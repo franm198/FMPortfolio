@@ -1,15 +1,36 @@
+// INDEX //
+
+// - CORE STYLING ELEMENTS
+// - INTRO SECTION
+// - NAVIGATION SECTION
+// - ABOUT ME SECTION 
+// - SKILLS SECTION 
+// - CONTACT SECTION 
+// - FOOTER SECTION
+
+@import "./palette.scss";
+
 /* CORE STYLING ELEMENTS */
 
 body {
-    background-color: white;
-
+    background-color: $darkblue;
+    color:white
 }
 
 .main {
     margin-top: 30px;
 }
 
-// STYLING FOR LARGE "JUNIOR SOFTWARE DEVELOPER." SECTION // 
+.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+    font-size: 48px;
+    font-family: "Cormorant", serif;
+    margin-left: 134px;
+    &--footer {
+        margin-left: 0;
+    }
+    }
+
+// STYLING FOR LARGE "JUNIOR SOFTWARE DEVELOPER." INTRO SECTION // 
 
 #bigHeading {
     font-size: 128px;
@@ -36,7 +57,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: white;
+    background-color: $darkblue;
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,7 +68,7 @@ ul {
     list-style-type: none;
     margin: 25px;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size:20px;
 }
 
@@ -58,7 +79,7 @@ li {
 li a {
     display: block;
     padding: 10px;
-    background-color: white;
+    background-color: $darkblue;
     gap:80px;
     text-align: center;
     padding: 14px 16px;
@@ -67,8 +88,13 @@ li a {
 }
 
 li a:hover {
-    background-color:grey;
-    transition-delay: 0.3s;
+    background-color: white;
+    transition-delay: 0.3s ease;
+    color: black;
+}
+
+li a:visited {
+    color: inherit;
 }
 
 .navigation__header {
@@ -91,17 +117,8 @@ li a:hover {
    border: none;
    cursor: pointer;
 }
- 
 
-
-.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-font-size: 48px;
-font-family: "Cormorant", serif;
-margin-left: 134px;
-&--footer {
-    margin-left: 0;
-}
-}
+// ABOUT ME SECTION
 
 .img {
     display: flex;
@@ -136,11 +153,56 @@ margin-left: 134px;
 .svg-container-skills-icons {
    grid-column-start: 2;
    display: flex;
+   align-items: center;
+
    flex-direction: row;
    column-gap:  50px;
    text-align: center;
 
-   .
+
+}
+
+// Portfolio Section
+
+.portfolio-grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    row-gap: 64px;
+    margin: 0 auto;
+}
+
+.project-card {
+    max-width:fit-content;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.project-box-first-line {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2%;
+}
+
+.dual-icon-selection {
+    display: inline-flex;
+    gap: 2%;
+}
+
+.project-header {
+    font-size: 42px;
+    font-family: "Cormorant";
+    font-weight:100;
+    margin: 0;
+}
+
+.project-box-second-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
 
 }
 
@@ -174,10 +236,14 @@ margin-left: 134px;
 //footerstyle section //
 
 footer {
-    min-height: 100px;
+    height: 12%;
     width: 100%;
+    display: flex;
     background-color: black;
     align-items: center;
+    background-size: 100% 100%;
+    justify-content: center;
+    padding: 1%;
 }
 
 .social-buttons__footer {
