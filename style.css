@@ -1,7 +1,8 @@
 /* CORE STYLING ELEMENTS */
 body {
-  background-color: #0b2030;
-  color: white;
+  background-color: #EDE4DB;
+  color: black;
+  margin: 0px;
 }
 
 .main {
@@ -10,26 +11,39 @@ body {
 
 .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
   font-size: 48px;
-  font-family: "Cormorant", serif;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
   margin-left: 134px;
 }
 .navigation__header--footer, .header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
   margin-left: 0;
 }
 
+svg {
+  color: #a17777;
+}
+
+.highlight {
+  display: inline;
+  color: #ac8181;
+}
+
 #bigHeading {
   font-size: 128px;
-  font-weight: 400;
+  font-weight: 1;
   text-align: center;
   line-height: 153.6px;
+  letter-spacing: 2px;
 }
 
 .header-group {
   margin-top: 140px;
+  margin-bottom: 5%;
 }
 
 .header-text {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 191px;
   font-size: 20px;
   line-height: 32px;
@@ -38,9 +52,10 @@ body {
 
 .navigation {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background-color: #0b2030;
+  background-color: #EDE4DB;
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,7 +65,7 @@ ul {
   list-style-type: none;
   margin: 25px;
   padding: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -61,7 +76,7 @@ li {
 li a {
   display: block;
   padding: 10px;
-  background-color: #0b2030;
+  background-color: #EDE4DB;
   gap: 80px;
   text-align: center;
   padding: 14px 16px;
@@ -69,9 +84,8 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-color: #a17777;
   transition-delay: 0.3s ease;
-  color: black;
 }
 
 li a:visited {
@@ -88,52 +102,28 @@ li a:visited {
   cursor: pointer;
 }
 
-.img {
-  display: flex;
-  flex-wrap: wrap;
-  height: 200px;
-  width: auto;
-  margin-left: 10%;
+.my-portfolio-section {
+  background-color: #ccc2b9;
+  padding-bottom: 3%;
 }
 
-.about-me-container {
+.portfolio-header-container {
   display: flex;
-  justify-content: space-around;
-}
-
-.about-me-text_ {
-  display: flex;
-  font-size: auto;
-  width: 40%;
-  margin-left: 134px;
-  line-height: 28.8px;
-}
-
-.get-in-touch-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.svg-container-skills-icons {
-  grid-column-start: 2;
-  display: flex;
-  align-items: center;
   flex-direction: row;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  text-align: center;
+  align-items: center;
+  gap: 0.5%;
 }
 
 .portfolio-grid-container {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-content: center;
-  text-align: center;
+  display: grid;
   justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
   row-gap: 64px;
-  margin: 0 auto;
+  margin: 0 10%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
 }
 
 .project-card {
@@ -152,13 +142,13 @@ li a:visited {
 
 .dual-icon-selection {
   display: inline-flex;
-  gap: 2%;
+  gap: 5%;
 }
 
 .project-header {
   font-size: 42px;
-  font-family: "Cormorant";
-  font-weight: 100;
+  font-family: "Montserrat";
+  font: weight 50px;
   margin: 0;
 }
 
@@ -166,35 +156,123 @@ li a:visited {
   display: flex;
   flex-direction: row;
   font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 2%;
+}
+
+.project-code-tags {
+  background-color: #ac8181;
+  border: 1px solid #a17777;
+  padding: 1.5%;
+  color: white;
+}
+
+.header-embellishment-decal {
+  margin-left: 134px;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-between;
+  text-align: left;
+  justify-content: center;
+  row-gap: 64px;
+  margin: 0 10%;
+}
+
+.about-me-text_ {
+  display: flex;
+  font-size: auto;
+  width: 80%;
+  margin-left: 134px;
+  line-height: 28.8px;
+}
+
+.body-text-about-me {
+  display: flex;
+  flex-direction: column;
+  align-content: right;
+  justify-content: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+  border: 3px solid #f8f8ff;
+  align-content: left;
+}
+
+.header-embellishment-decal {
+  margin-left: 134px;
+}
+
+.skills-technical-section {
+  background-color: #ccc2b9;
+  padding-bottom: 3%;
+}
+
+.skills-technical-header-container {
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.svg-container-skills-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a17777;
 }
 
 .get-in-touch-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3%;
 }
 
 #bigBottomHeading {
   font-size: 128px;
+  font-family: "Montserrat";
+  margin-bottom: 1%;
   font-weight: 400;
   text-align: center;
 }
 
 .contact {
   font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 28.8px;
-  border: 1px solid black;
+  border: 5px solid #a17777;
   margin: 20px;
   padding: 40px;
-  background-color: white;
+  background-color: #ac8181;
   width: 321px;
+  color: #f8f8ff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: #a17777;
+  transition-delay: 0.3s ease;
 }
 
 footer {
   height: 12%;
   width: 100%;
   display: flex;
-  background-color: black;
+  background-color: #ac8181;
   align-items: center;
   background-size: 100% 100%;
   justify-content: center;
