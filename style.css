@@ -61,6 +61,10 @@ svg {
   width: 100%;
 }
 
+.header-embellishment-decal-nav {
+  display: flex;
+}
+
 ul {
   list-style-type: none;
   margin: 25px;
@@ -85,6 +89,7 @@ li a {
 
 li a:hover {
   background-color: #a17777;
+  color: white;
   transition-delay: 0.3s ease;
 }
 
@@ -138,6 +143,7 @@ li a:visited {
   align-items: center;
   justify-content: space-between;
   border: 2%;
+  margin-top: 1%;
 }
 
 .dual-icon-selection {
@@ -148,7 +154,7 @@ li a:visited {
 .project-header {
   font-size: 42px;
   font-family: "Montserrat";
-  font: weight 50px;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -208,8 +214,12 @@ li a:visited {
   align-content: left;
 }
 
-.header-embellishment-decal {
-  margin-left: 134px;
+.experience-interest-first-line {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 
 .skills-technical-section {
@@ -225,12 +235,24 @@ li a:visited {
 }
 
 .svg-container-skills-icons {
-  display: flex;
+  display: grid;
+  justify-content: space-evenly;
+  grid-row: 2;
+  text-align: center;
   align-items: center;
   justify-content: center;
   gap: 5%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #a17777;
+  color: #f8f8ff;
+}
+
+.skill-icons__icon {
+  fill: white;
+}
+
+.skill-icons__icon:hover {
+  fill: #a17777;
+  transition-delay: 0.3s ease;
 }
 
 .get-in-touch-container {
@@ -245,7 +267,7 @@ li a:visited {
   font-size: 128px;
   font-family: "Montserrat";
   margin-bottom: 1%;
-  font-weight: 400;
+  font-weight: 100;
   text-align: center;
 }
 

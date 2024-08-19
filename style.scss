@@ -79,6 +79,10 @@ body {
     
 }
 
+.header-embellishment-decal-nav {
+    display: flex;
+}
+
 ul {
     list-style-type: none;
     margin: 25px;
@@ -104,6 +108,7 @@ li a {
 
 li a:hover {
     background-color: $darkclay;
+    color: white;
     transition-delay: 0.3s ease;
 }
 
@@ -167,6 +172,7 @@ li a:visited {
     align-items: center;
     justify-content: space-between;
     border: 2%;
+    margin-top: 1%;
 }
 
 .dual-icon-selection {
@@ -177,7 +183,7 @@ li a:visited {
 .project-header {
     font-size: 42px;
     font-family: "Montserrat";
-    font: weight 50px;;
+    font-weight: 200;
     margin: 0;
 }
 
@@ -203,13 +209,6 @@ li a:visited {
 }
 
  .about-me-container {
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // gap: 10px;
-    // justify-content: center;
-    // align-content: center;
-    // text-align: left;
-    // margin: 0 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: space-between;
@@ -246,9 +245,13 @@ li a:visited {
     align-content:left;
 }
 
+.experience-interest-first-line {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 500;
 
-.header-embellishment-decal {
-    margin-left: 134px;
 }
 
 // Skills Section // 
@@ -265,12 +268,24 @@ li a:visited {
 }
 
 .svg-container-skills-icons {
-    display: flex;
+    display: grid;
+    justify-content: space-evenly;
+    grid-row: 2;
+    text-align: center;
     align-items: center;
     justify-content: center;
     gap: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    color: $darkclay;
+    color: $offwhite;
+}
+
+.skill-icons__icon {
+    fill: white;
+}
+
+.skill-icons__icon:hover {
+    fill: $darkclay;
+    transition-delay: 0.3s ease;
 }
 
 
@@ -288,7 +303,7 @@ li a:visited {
     font-size: 128px;
     font-family: "Montserrat";
     margin-bottom: 1%;
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
   }
 
