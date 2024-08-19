@@ -81,7 +81,7 @@ li a {
   display: block;
   padding: 10px;
   background-color: #EDE4DB;
-  gap: 80px;
+  gap: 10%;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -222,6 +222,12 @@ li a:visited {
   font-weight: 500;
 }
 
+.aboutme-sub-list {
+  list-style-type: disc;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .skills-technical-section {
   background-color: #ccc2b9;
   padding-bottom: 3%;
@@ -244,6 +250,12 @@ li a:visited {
   gap: 5%;
   font-family: Arial, Helvetica, sans-serif;
   color: #f8f8ff;
+}
+
+.skills-icon-name {
+  background-color: #8a5e5e;
+  padding: 1%;
+  border: 1px solid #6e4d4d;
 }
 
 .skill-icons__icon {
