@@ -64,7 +64,12 @@ body {
     line-height: 153.6px;
     letter-spacing: 2px;
     padding-top: 15%;
-    padding-bottom: 0%;    
+    padding-bottom: 0%;  
+
+    &__svg {
+        display: block;
+        width:20%;
+    }
 }
  
 .header {
@@ -79,7 +84,7 @@ body {
 .header-text {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    //margin-left: 191px;
+    margin-left: 20%;
     font-size: 20px;
     line-height: 32px;
     width: 40%;
@@ -98,10 +103,10 @@ body {
     .header-text {
         display: flex;
         font-family: Arial, Helvetica, sans-serif;
-        //margin-left: 191px;
         font-size: 10px;
         width: 100%;
         line-height: 20px;
+        margin: 2%;
     }
 }
 
@@ -122,10 +127,10 @@ body {
     
     ul {
         list-style-type: none;
-        margin: 25px;
+        align-items: right;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
-        font-size:20px;
+        font-size:18px;
     }
     
     li {
@@ -166,57 +171,10 @@ body {
     
 }
 
-// .header-embellishment-decal-nav {
-//     display: flex;
-// }
-
-// ul {
-//     list-style-type: none;
-//     margin: 25px;
-//     padding: 0;
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-size:20px;
-// }
-
-// li {
-//     float: left;
-// }
-
-// li a {
-//     display: block;
-//     padding: 10px;
-//     background-color: $darkblue;
-//     gap: 10%;
-//     text-align: center;
-//     padding: 14px 16px;
-//     text-decoration: none;
-    
-// }
-
-// li a:hover {
-//     background-color: $darkclay;
-//     color: white;
-//     transition-delay: 0.3s ease;
-// }
-
-// li a:visited {
-//     color: inherit;
-// }
-
-// .navigation__header {
-//    gap: 80px;
-
-//  }
-
-// .btn-nav-all {
-//    background-color: HEX#0C2131;
-//    border: none;
-//    cursor: pointer;
-// }
 
 @media screen and (max-width:768px) {
     .navigation {
-        display: inline-block;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
@@ -229,6 +187,11 @@ body {
 
     ul {
         display: none;
+    }
+
+    .nav-mobile-icon {
+        display: flex;
+        padding-right: 10%;
     }
     
 }
@@ -301,6 +264,11 @@ body {
         padding: 1.5%;
         color:white;
     }
+    .project-code-tags:hover {
+        background-color: $lightclay;
+        transition-delay: 0.3s ease; 
+        cursor: pointer;
+       }
 
 }
 
@@ -309,8 +277,19 @@ body {
     .my-portfolio-section {
         width: 100%;
         height: auto;
+        
         .portfolio-header-container {
-         gap: 0.5%;
+        display: inline-flex;
+        align-content: space-between;
+         gap: 3%;
+         width: 45%;
+         }
+         &__headerDecal {
+            display: inline-flex;
+            align-content: space-between;
+            height: auto;
+            width: auto;
+            margin-top: 5%;
          }
      
          .portfolio-grid-container {
@@ -319,13 +298,17 @@ body {
              justify-items: center;
              grid-template-columns: repeat(1, 1fr);
              text-align: center;
-             width: 100%;
+             width: 80%;
              height: auto;
+         }
+
+         .project-header {
+            font-size: 25px;
          }
 
          .portfolio-landing-page {
             svg {
-                width: 80%;
+                width: 100%;
                 height: auto;
             }
          }
@@ -333,14 +316,13 @@ body {
          .project-card {
             width: 100%;
             height: auto;
-            margin: 20px;
             
              display: inline-flex;
              flex-direction: column;
          }
      
          .project-box-first-line {
-             display: inline-flex;
+             display: flex;
              align-items: center;
              justify-content: space-between;
              border: 2%;
@@ -350,14 +332,6 @@ body {
          .dual-icon-selection {
              display: inline-flex;
              gap: 5%;
-         }
-     
-         .project-header {
-             font-size: 42px;
-             font-family: "Montserrat";
-             font-weight: 200;
-             margin: 0;
-
          }
 
          .header-embellishment-decal-nav {
@@ -373,23 +347,22 @@ body {
              font-family: Arial, Helvetica, sans-serif;
              gap: 2%;
          }
-     
+
          .project-code-tags {
              background-color: $clay;
              border: 1px solid $darkclay;
              padding: 1.5%;
              color:white;
          }
-     
      }
 
 }
 
 // ABOUT ME SECTION
 
-// .header-embellishment-decal {
-   // margin-left: 134px;
-//}
+.header-embellishment-decal {
+   margin-left: 134px;
+}
 .about-me-article {
     margin: 10px;
     width: 100%;
@@ -558,6 +531,17 @@ background-color:$darkblue;
         font-family: Arial, Helvetica, sans-serif;
         color: $offwhite;
     }
+    .skills-technical-header-container {
+        display: block;
+        padding-top: 5%;
+    }
+    .skills-technical-section_bodyText {
+        display: block;
+        font-size: 12px;
+        text-align: left;
+        margin: 3%;
+        padding-bottom: 5%;
+    }
 }
 
 // Get in Touch section //
@@ -589,7 +573,7 @@ background-color:$darkblue;
     margin: 20px;
     padding: 40px;
     background-color: $clay;
-    width: 50%;
+    width: 20%;
     color: $offwhite;
     letter-spacing: 2px;
     cursor: pointer;
@@ -606,6 +590,10 @@ background-color:$darkblue;
         flex-direction: column;
         align-items: center;
         justify-content: center; 
+    }
+
+    .big-heading {
+        font-size: 60px;
     }
 }
 

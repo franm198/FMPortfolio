@@ -46,6 +46,10 @@ svg {
   padding-top: 15%;
   padding-bottom: 0%;
 }
+.big-top-heading__svg {
+  display: block;
+  width: 20%;
+}
 
 .header {
   width: 90%;
@@ -59,6 +63,7 @@ svg {
 .header-text {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20%;
   font-size: 20px;
   line-height: 32px;
   width: 40%;
@@ -80,6 +85,7 @@ svg {
     font-size: 10px;
     width: 100%;
     line-height: 20px;
+    margin: 2%;
   }
 }
 .navigation {
@@ -97,10 +103,10 @@ svg {
 }
 .navigation ul {
   list-style-type: none;
-  margin: 25px;
+  align-items: right;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 .navigation li {
   float: left;
@@ -133,7 +139,7 @@ svg {
 
 @media screen and (max-width: 768px) {
   .navigation {
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -144,6 +150,10 @@ svg {
   }
   ul {
     display: none;
+  }
+  .nav-mobile-icon {
+    display: flex;
+    padding-right: 10%;
   }
 }
 .my-portfolio-section {
@@ -207,6 +217,11 @@ svg {
   padding: 1.5%;
   color: white;
 }
+.my-portfolio-section .project-code-tags:hover {
+  background-color: #cfb2b2;
+  transition-delay: 0.3s ease;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .my-portfolio-section {
@@ -214,7 +229,17 @@ svg {
     height: auto;
   }
   .my-portfolio-section .portfolio-header-container {
-    gap: 0.5%;
+    display: inline-flex;
+    align-content: space-between;
+    gap: 3%;
+    width: 45%;
+  }
+  .my-portfolio-section__headerDecal {
+    display: inline-flex;
+    align-content: space-between;
+    height: auto;
+    width: auto;
+    margin-top: 5%;
   }
   .my-portfolio-section .portfolio-grid-container {
     display: grid;
@@ -222,22 +247,24 @@ svg {
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
+  .my-portfolio-section .project-header {
+    font-size: 25px;
+  }
   .my-portfolio-section .portfolio-landing-page svg {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
   .my-portfolio-section .project-card {
     width: 100%;
     height: auto;
-    margin: 20px;
     display: inline-flex;
     flex-direction: column;
   }
   .my-portfolio-section .project-box-first-line {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2%;
@@ -246,12 +273,6 @@ svg {
   .my-portfolio-section .dual-icon-selection {
     display: inline-flex;
     gap: 5%;
-  }
-  .my-portfolio-section .project-header {
-    font-size: 42px;
-    font-family: "Montserrat";
-    font-weight: 200;
-    margin: 0;
   }
   .my-portfolio-section .header-embellishment-decal-nav {
     display: flex;
@@ -271,6 +292,10 @@ svg {
     color: white;
   }
 }
+.header-embellishment-decal {
+  margin-left: 134px;
+}
+
 .about-me-article {
   margin: 10px;
   width: 100%;
@@ -414,6 +439,17 @@ svg {
     font-family: Arial, Helvetica, sans-serif;
     color: #f8f8ff;
   }
+  .skills-technical-header-container {
+    display: block;
+    padding-top: 5%;
+  }
+  .skills-technical-section_bodyText {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin: 3%;
+    padding-bottom: 5%;
+  }
 }
 .get-in-touch-container {
   display: flex;
@@ -442,7 +478,7 @@ svg {
   margin: 20px;
   padding: 40px;
   background-color: #ac8181;
-  width: 50%;
+  width: 20%;
   color: #f8f8ff;
   letter-spacing: 2px;
   cursor: pointer;
@@ -459,6 +495,9 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .big-heading {
+    font-size: 60px;
   }
 }
 .social-buttons {
