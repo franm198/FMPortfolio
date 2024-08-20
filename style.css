@@ -2,11 +2,11 @@
 body {
   background-color: #EDE4DB;
   color: black;
-  margin: 0px;
 }
 
 .main {
   margin-top: 30px;
+  width: 100%;
 }
 
 .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
@@ -28,12 +28,27 @@ svg {
   color: #ac8181;
 }
 
-#bigHeading {
+@media screen and (max-width: 768px) {
+  .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+    width: 50%;
+    font-size: 25px;
+    margin: 5%;
+    margin-right: 0;
+  }
+}
+.big-top-heading {
   font-size: 128px;
+  font-family: "Montserrat";
   font-weight: 1;
   text-align: center;
   line-height: 153.6px;
   letter-spacing: 2px;
+  padding-top: 15%;
+  padding-bottom: 0%;
+}
+
+.header {
+  width: 90%;
 }
 
 .header-group {
@@ -44,12 +59,29 @@ svg {
 .header-text {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 191px;
   font-size: 20px;
   line-height: 32px;
   width: 40%;
 }
 
+@media screen and (max-width: 768px) {
+  .big-top-heading {
+    font-size: 45px;
+    font-weight: 1;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    line-height: 45px;
+  }
+  .header-text {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    width: 100%;
+    line-height: 20px;
+  }
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -60,24 +92,20 @@ svg {
   top: 0;
   width: 100%;
 }
-
-.header-embellishment-decal-nav {
+.navigation .header-embellishment-decal-nav {
   display: flex;
 }
-
-ul {
+.navigation ul {
   list-style-type: none;
   margin: 25px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-
-li {
+.navigation li {
   float: left;
 }
-
-li a {
+.navigation li a {
   display: block;
   padding: 10px;
   background-color: #EDE4DB;
@@ -86,40 +114,49 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-li a:hover {
+.navigation li a:hover {
   background-color: #a17777;
   color: white;
   transition-delay: 0.3s ease;
 }
-
-li a:visited {
+.navigation li a:visited {
   color: inherit;
 }
-
-.navigation__header {
+.navigation .navigation__header {
   gap: 80px;
 }
-
-.btn-nav-all {
+.navigation .btn-nav-all {
   background-color: HEX #0C2131;
   border: none;
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #EDE4DB;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  ul {
+    display: none;
+  }
+}
 .my-portfolio-section {
   background-color: #ccc2b9;
   padding-bottom: 3%;
 }
-
-.portfolio-header-container {
+.my-portfolio-section .portfolio-header-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5%;
 }
-
-.portfolio-grid-container {
+.my-portfolio-section .portfolio-grid-container {
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -130,51 +167,122 @@ li a:visited {
   -moz-column-gap: 2%;
        column-gap: 2%;
 }
-
-.project-card {
+.my-portfolio-section .project-card {
   max-width: -moz-fit-content;
   max-width: fit-content;
   display: inline-flex;
   flex-direction: column;
 }
-
-.project-box-first-line {
+.my-portfolio-section .header-embellishment-decal-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+.my-portfolio-section .project-box-first-line {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   border: 2%;
   margin-top: 1%;
 }
-
-.dual-icon-selection {
+.my-portfolio-section .dual-icon-selection {
   display: inline-flex;
   gap: 5%;
 }
-
-.project-header {
+.my-portfolio-section .project-header {
   font-size: 42px;
   font-family: "Montserrat";
   font-weight: 200;
   margin: 0;
 }
-
-.project-box-second-line {
+.my-portfolio-section .project-box-second-line {
   display: flex;
   flex-direction: row;
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   gap: 2%;
 }
-
-.project-code-tags {
+.my-portfolio-section .project-code-tags {
   background-color: #ac8181;
   border: 1px solid #a17777;
   padding: 1.5%;
   color: white;
 }
 
-.header-embellishment-decal {
-  margin-left: 134px;
+@media screen and (max-width: 768px) {
+  .my-portfolio-section {
+    width: 100%;
+    height: auto;
+  }
+  .my-portfolio-section .portfolio-header-container {
+    gap: 0.5%;
+  }
+  .my-portfolio-section .portfolio-grid-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: 0 5%;
+    width: 100%;
+    height: auto;
+  }
+  .my-portfolio-section .portfolio-landing-page svg {
+    width: 80%;
+    height: auto;
+  }
+  .my-portfolio-section .project-card {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .my-portfolio-section .project-box-first-line {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2%;
+    margin-top: 1%;
+  }
+  .my-portfolio-section .dual-icon-selection {
+    display: inline-flex;
+    gap: 5%;
+  }
+  .my-portfolio-section .project-header {
+    font-size: 42px;
+    font-family: "Montserrat";
+    font-weight: 200;
+    margin: 0;
+  }
+  .my-portfolio-section .header-embellishment-decal-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .my-portfolio-section .project-box-second-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 2%;
+  }
+  .my-portfolio-section .project-code-tags {
+    background-color: #ac8181;
+    border: 1px solid #a17777;
+    padding: 1.5%;
+    color: white;
+  }
+}
+.about-me-article {
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 70px 0px;
+}
+
+.space {
+  width: 0px;
+  height: 300px;
 }
 
 .about-me-container {
@@ -191,7 +299,6 @@ li a:visited {
   display: flex;
   font-size: auto;
   width: 80%;
-  margin-left: 134px;
   line-height: 28.8px;
 }
 
@@ -204,13 +311,12 @@ li a:visited {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.img {
+.img-about-me__grid {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   margin-left: 10%;
-  border: 3px solid #f8f8ff;
   align-content: left;
 }
 
@@ -222,10 +328,34 @@ li a:visited {
   font-weight: 500;
 }
 
-.aboutme-sub-list {
-  list-style-type: disc;
-  font-size: 14px;
+.experience-interest-container {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.experience-interest-list-items__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-about-me__grid img {
+    height: 100%;
+    width: 100%;
+  }
+  .about-me-container {
+    display: block;
+  }
+  .experience-interest-list-items__line {
+    width: 80%;
+  }
+}
+.ex-in-btn {
+  border: none;
+  background-color: #EDE4DB;
 }
 
 .skills-technical-section {
@@ -241,7 +371,7 @@ li a:visited {
 }
 
 .svg-container-skills-icons {
-  display: grid;
+  display: flex;
   justify-content: space-evenly;
   grid-row: 2;
   text-align: center;
@@ -267,6 +397,15 @@ li a:visited {
   transition-delay: 0.3s ease;
 }
 
+@media screen and (max-width: 768px) {
+  .svg-container-skills-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8ff;
+  }
+}
 .get-in-touch-container {
   display: flex;
   flex-direction: column;
@@ -275,8 +414,8 @@ li a:visited {
   margin-bottom: 3%;
 }
 
-#bigBottomHeading {
-  font-size: 128px;
+.big-heading {
+  font-size: 100px;
   font-family: "Montserrat";
   margin-bottom: 1%;
   font-weight: 100;
@@ -284,6 +423,9 @@ li a:visited {
 }
 
 .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 28.8px;
@@ -291,7 +433,7 @@ li a:visited {
   margin: 20px;
   padding: 40px;
   background-color: #ac8181;
-  width: 321px;
+  width: 50%;
   color: #f8f8ff;
   letter-spacing: 2px;
   cursor: pointer;
@@ -302,20 +444,30 @@ li a:visited {
   transition-delay: 0.3s ease;
 }
 
-footer {
+@media screen and (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 12%;
   width: 100%;
-  display: flex;
   background-color: #ac8181;
-  align-items: center;
   background-size: 100% 100%;
-  justify-content: center;
   padding: 1%;
+  gap: 10px;
 }
 
-.social-buttons__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+@media screen and (max-width: 768px) {
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
