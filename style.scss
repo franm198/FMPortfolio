@@ -91,7 +91,7 @@ body {
         font-weight: 1;
         text-align: left;
         letter-spacing: 1px;
-        padding-top: 15%;
+        padding-top: 2%;
         padding-bottom: 0%;  
         line-height: 45px;
     }
@@ -319,8 +319,6 @@ body {
              justify-items: center;
              grid-template-columns: repeat(1, 1fr);
              text-align: center;
-             margin: 0 5%;
-            
              width: 100%;
              height: auto;
          }
@@ -483,9 +481,22 @@ body {
     }
     .experience-interest-list-items {
         &__line {
-            width: 80%;
+            width: 90%;
         }
     }
+    .body-text-about-me {
+    display: flex;
+    align-items: center;
+    }
+
+    .ex-in-btn {
+            width: 100%;
+            border: none;
+            text-align: left;
+        //     cursor: pointer;
+        background-color:$darkblue;
+            
+        }
 }
 
 
