@@ -32,7 +32,7 @@ svg {
   .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
     width: 50%;
     font-size: 25px;
-    margin: 5%;
+    margin: 2%;
     margin-right: 0;
   }
 }
@@ -152,14 +152,12 @@ svg {
     position: fixed;
     top: 0;
     height: auto;
-    width: 100%;
   }
   ul {
     display: none;
   }
   .nav-mobile-icon {
     display: flex;
-    padding-right: 10%;
   }
 }
 .my-portfolio-section {
@@ -177,7 +175,7 @@ svg {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: auto;
   row-gap: 64px;
   margin: 0 10%;
@@ -274,7 +272,6 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2%;
     margin-top: 1%;
   }
   .my-portfolio-section .dual-icon-selection {
@@ -303,7 +300,6 @@ svg {
   margin: 10px;
   width: 100%;
   height: auto;
-  margin: 10px;
   padding: 70px 0px;
 }
 
