@@ -42,6 +42,7 @@ svg {
   font-weight: 1;
   text-align: center;
   line-height: 153.6px;
+  margin-left: 10%;
   letter-spacing: 2px;
   padding-top: 15%;
   padding-bottom: 0%;
@@ -135,6 +136,9 @@ svg {
   background-color: HEX #0C2131;
   border: none;
   cursor: pointer;
+}
+.navigation .nav-mobile-icon {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -495,6 +499,7 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: auto;
   }
   .big-heading {
     font-size: 60px;
