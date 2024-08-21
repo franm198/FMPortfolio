@@ -2,6 +2,7 @@
 
 // - CORE STYLING ELEMENTS inc. palette
 @import "./palette.scss";
+@import "./corestyle.scss";
 
 // - INTRO SECTION
 @import "./intro.scss";
@@ -35,35 +36,3 @@
 
 
 
-/* CORE STYLING ELEMENTS */
-
-
-
-body {
-    background-color: $mainbeige;
-    color:black;
-}
-
-.main {
-    margin-top: 30px;
-    width: 100%;
-}
-
-.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-    font-size: 48px;
-    font-family: "Montserrat";
-    letter-spacing: 1px;
-    margin-left: 7%;
-    &--footer {
-        margin-left: 0;
-    }
-    }
-
-    svg {
-        color: $darkclay;
-    }
-
-    .highlight {
-        display: inline;
-        color: $clay;
-    }

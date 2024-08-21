@@ -4,9 +4,8 @@
 
 @media screen and (max-width:768px) {
     .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-        width: 50%;
-        font-size: 25px;
-        margin-left: 2%;
+        width: 30%;
+        font-size: 20px;
     }
 }
 
@@ -42,24 +41,33 @@
 
 //NAV BAR SECTION 
 
-// @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
    
-//     .navigation {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         flex-direction: row;
-//         background-color: $mainbeige;
-//         position: fixed;
-//         top: 0;
-//         height: auto;
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: $mainbeige;
+        position: fixed;
+        top: 0;
+        height: auto;
 
-//         ul {
-//             display: none;
-//         }
-//     }
+        ul {
+            display: none;
+        }
+        .navigation__header {
+            display: flex;
+            
+        }
+    }
     
-// }
+}
+
+@media screen and (min-width:768px) {
+    .nav-mobile-icon {
+        display: none;
+    }
+}
 
 // PORTFOLIO SECTION
 

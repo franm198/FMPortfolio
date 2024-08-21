@@ -1,3 +1,33 @@
+/* CORE STYLING ELEMENTS */
+body {
+  background-color: #EDE4DB;
+  color: black;
+}
+
+.main {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+  font-size: 48px;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  margin-left: 7%;
+}
+.navigation__header--footer, .header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
+  margin-left: 0;
+}
+
+svg {
+  color: #a17777;
+}
+
+.highlight {
+  display: inline;
+  color: #ac8181;
+}
+
 .big-top-heading {
   font-size: 128px;
   font-family: "Montserrat";
@@ -34,9 +64,8 @@
 
 .navigation {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  flex-direction: row;
+  align-items: center;
   background-color: #EDE4DB;
   position: fixed;
   top: 0;
@@ -48,13 +77,14 @@
 .navigation ul {
   display: flex;
   list-style-type: none;
-  align-items: right;
-  justify-content: center;
   padding: 1%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  width: 50%;
-  padding-left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .navigation ul {
+    display: none;
+  }
 }
 .navigation li {
   float: left;
@@ -77,13 +107,6 @@
 }
 .navigation .navigation__header {
   gap: 30%;
-}
-.navigation .nav-mobile-icon {
-  display: none;
-}
-.navigation .nav-btn.container {
-  display: flex;
-  flex-direction: row;
 }
 
 .my-portfolio-section {
@@ -221,16 +244,6 @@
   margin: 5px;
 }
 
-.experience-interest-list-items__button {
-  border: none;
-  background-color: #EDE4DB;
-}
-
-.ex-in-btn a:hover {
-  background-color: #a17777;
-  transition-delay: 0.3s ease;
-}
-
 .skills-technical-section {
   background-color: #ccc2b9;
   padding-bottom: 3%;
@@ -361,14 +374,14 @@
 }
 @media screen and (max-width: 768px) {
   .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-    width: 50%;
-    font-size: 25px;
-    margin-left: 2%;
+    width: 30%;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .header-group {
     margin-bottom: 10%;
+    margin-top: 20%;
   }
   .big-top-heading {
     font-size: 45px;
@@ -376,7 +389,7 @@
     text-align: left;
     letter-spacing: 1px;
     margin-left: 2%;
-    padding-top: 5%;
+    padding-top: 20%;
     padding-bottom: 0%;
     line-height: 45px;
   }
@@ -387,24 +400,6 @@
     width: 100%;
     line-height: 20px;
     margin: 2%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: #EDE4DB;
-    position: fixed;
-    top: 0;
-    height: auto;
-  }
-  ul {
-    display: none;
-  }
-  .nav-mobile-icon {
-    display: flex;
   }
 }
 @media screen and (max-width: 768px) {
@@ -536,34 +531,4 @@
 .ex-in-btn a:hover {
   background-color: #a17777;
   transition-delay: 0.3s ease;
-}
-
-/* CORE STYLING ELEMENTS */
-body {
-  background-color: #EDE4DB;
-  color: black;
-}
-
-.main {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-  font-size: 48px;
-  font-family: "Montserrat";
-  letter-spacing: 1px;
-  margin-left: 7%;
-}
-.navigation__header--footer, .header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
-  margin-left: 0;
-}
-
-svg {
-  color: #a17777;
-}
-
-.highlight {
-  display: inline;
-  color: #ac8181;
 }/*# sourceMappingURL=style.css.map */
