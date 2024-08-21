@@ -1,0 +1,79 @@
+// Portfolio Section
+
+// Styling for the portfolio section of website, including containers and widths etc.
+
+.my-portfolio-section {
+    background-color: #ccc2b9;
+    padding-bottom:3%;
+    
+    .portfolio-header-container {
+     display: flex;
+     align-items: center;
+     gap: 0.5%;
+     }
+ 
+     .portfolio-grid-container {
+         display: grid;
+         justify-content: center;
+         justify-items: center;
+         grid-template-columns: repeat(3, 1fr);
+         text-align: center;
+         width: 100%;
+         height: auto;
+         row-gap: 64px;
+         column-gap: 2%;
+     }
+ 
+     .project-card {
+         max-width:fit-content;
+         display: inline-flex;
+         flex-direction: column;
+     }
+     
+     .header-embellishment-decal-nav {
+         display: flex;
+         justify-content: flex-start;
+      }
+ 
+     .project-box-first-line {
+         display: inline-flex;
+         align-items: center;
+         justify-content: space-between;
+         border: 2%;
+         margin-top: 1%;
+     }
+ 
+     .dual-icon-selection {
+         display: inline-flex;
+         gap: 5%;
+     }
+ 
+     .project-header {
+         font-size: 42px;
+         font-family: "Montserrat";
+         font-weight: 200;
+         margin: 0;
+     }
+ 
+     .project-box-second-line {
+         display: flex;
+         flex-direction: row;
+         font-size: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         gap: 2%;
+     }
+ 
+     .project-code-tags {
+         background-color: $clay;
+         border: 1px solid $darkclay;
+         padding: 1.5%;
+         color:white;
+     }
+     .project-code-tags:hover {
+         background-color: $lightclay;
+         transition-delay: 0.3s ease; 
+         cursor: pointer;
+        }
+ 
+ }
+ 

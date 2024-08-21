@@ -1,0 +1,24 @@
+//footerstyle section //
+
+.social-buttons {
+    display: flex;
+    justify-content: center; 
+        align-items: center;
+    height: 12%;
+    width: 100%;
+    background-color: $clay;
+    background-size: 100% 100%;
+    padding: 1%;
+    gap:10px
+}
+
+
+@media screen and (max-width:768px) {
+
+    .social-buttons {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+}

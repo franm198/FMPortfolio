@@ -1,0 +1,92 @@
+// ABOUT ME SECTION
+
+.about-me-article {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+}
+
+.space {
+    width: 0px;
+    height:300px;
+}
+
+    .about-me-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+    text-align: left;
+    justify-content: center;
+    row-gap: 64px;
+    margin: 0 10%;
+    }
+
+    .about-me-text_ {
+    display: flex;
+    font-size: auto;
+    width: 80%;
+    //margin-left: 134px;
+    line-height: 28.8px;
+    }
+    
+    .body-text-about-me {
+    display: flex;
+    flex-direction: column;
+    align-content: right;
+    justify-content: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .img-about-me {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        align-content:left;
+        }
+    }
+
+.experience-interest-first-line {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+
+}
+
+.experience-interest-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.experience-interest-list-items {
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px;
+        
+    
+    }
+}
+
+.experience-interest-list-items__button {
+    //     display: block;
+    //     width: 100%;
+        border: none;
+    background-color:$mainbeige;
+    
+    }
+
+    .ex-in-btn a:hover {
+        background-color: $darkclay;
+        transition-delay: 0.3s ease;
+    }
