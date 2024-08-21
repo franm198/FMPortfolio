@@ -1,0 +1,32 @@
+// Buttons used across project
+
+// Portfolio
+
+.project-code-tags {
+    background-color: $clay;
+    border: 1px solid $darkclay;
+    padding: 1.5%;
+    color:white;
+}
+.project-code-tags:hover {
+    background-color: $lightclay;
+    transition-delay: 0.3s ease; 
+    cursor: pointer;
+   }
+
+// About Me
+
+.experience-interest-list-items__button {
+    //     display: block;
+    //     width: 100%;
+        border: none;
+    background-color:$mainbeige;
+    
+    }
+
+    .ex-in-btn a:hover {
+        background-color: $darkclay;
+        transition-delay: 0.3s ease;
+    }
+
+    

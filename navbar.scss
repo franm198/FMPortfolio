@@ -4,9 +4,8 @@
 
 .navigation {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    align-items: center;
     background-color: $mainbeige;
     position: fixed;
     top: 0;
@@ -18,13 +17,14 @@
     ul {
         display: flex;
         list-style-type: none;
-        align-items: right;
-        justify-content: center;
         padding: 1%;
         font-family: Arial, Helvetica, sans-serif;
         font-size:18px;
-        width: 50%;
-        padding-left: 50%;
+
+        @media screen and (max-width:768px) {
+            display: none;
+            
+        }
     }
     
     li {
@@ -56,14 +56,4 @@
     
      }
 
-    .nav-mobile-icon {
-        display: none;
-    }
-
-    .nav-btn.container {
-        display: flex;
-        flex-direction: row;
-        
-    }
-    
 }
