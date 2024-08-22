@@ -3,9 +3,10 @@
 // Core Styling Elements
 
 @media screen and (max-width:768px) {
-    .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-        width: 30%;
-        font-size: 20px;
+    // .navigation__header, 
+    .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+        width: 20%;
+        font-size: 25px;
     }
 }
 
@@ -45,21 +46,26 @@
    
     .navigation {
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         flex-direction: row;
         background-color: $mainbeige;
         position: fixed;
         top: 0;
         height: auto;
+        width: 100%;
 
         ul {
             display: none;
-        }
-        .navigation__header {
-            display: flex;
-            
+            padding: 0;
         }
     }
+
+    .h1
+         { font-family: "Montserrat";
+            font-size: 20px;
+            display: flex;
+            margin-left: 0%;    
+        }
     
 }
 

@@ -9,13 +9,13 @@ body {
   width: 100%;
 }
 
-.navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+.header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
   font-size: 48px;
   font-family: "Montserrat";
   letter-spacing: 1px;
-  margin-left: 7%;
+  margin-left: 5%;
 }
-.navigation__header--footer, .header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
+.header__title--footer, .about-me-article__header--footer, .skills-technical-section__header--footer, .my-portfolio-section__header--footer, .get-in-touch__header--footer {
   margin-left: 0;
 }
 
@@ -64,12 +64,12 @@ svg {
 
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #EDE4DB;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 95%;
 }
 .navigation .header-embellishment-decal-nav {
   display: flex;
@@ -109,6 +109,11 @@ svg {
   gap: 30%;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-mobile-icon {
+    display: none;
+  }
+}
 .my-portfolio-section {
   background-color: #ccc2b9;
   padding-bottom: 3%;
@@ -319,40 +324,6 @@ svg {
   text-align: center;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 28.8px;
-  border: 5px solid #a17777;
-  margin: 20px;
-  padding: 40px;
-  background-color: #ac8181;
-  width: 20%;
-  color: #f8f8ff;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-.contact:hover {
-  background-color: #a17777;
-  transition-delay: 0.3s ease;
-}
-
-@media screen and (max-width: 768px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
-  .big-heading {
-    font-size: 60px;
-  }
-}
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -373,9 +344,9 @@ svg {
   }
 }
 @media screen and (max-width: 768px) {
-  .navigation__header, .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
-    width: 30%;
-    font-size: 20px;
+  .header__title, .about-me-article__header, .skills-technical-section__header, .my-portfolio-section__header, .get-in-touch__header {
+    width: 20%;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -400,6 +371,31 @@ svg {
     width: 100%;
     line-height: 20px;
     margin: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    background-color: #EDE4DB;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+  }
+  .navigation ul {
+    display: none;
+    padding: 0;
+  }
+  .navigation .navigation__header {
+    display: flex;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-mobile-icon {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -531,4 +527,31 @@ svg {
 .ex-in-btn a:hover {
   background-color: #a17777;
   transition-delay: 0.3s ease;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 28.8px;
+  border: 5px solid #a17777;
+  margin: 20px;
+  padding: 15px 40px;
+  background-color: #ac8181;
+  width: 20%;
+  height: auto;
+  color: #f8f8ff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: #a17777;
+  transition-delay: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
