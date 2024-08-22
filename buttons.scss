@@ -1,5 +1,13 @@
 // Buttons used across project
 
+// Navigation
+
+.nav-btn-container {
+    text-decoration: none;
+    color: black;
+    padding-right: 5%;
+}
+
 // Portfolio
 
 .project-code-tags {
@@ -43,7 +51,7 @@
         margin: 20px;
         padding: 15px 40px;
         background-color: $clay;
-        width: 20%;
+        width: 40%;
         height: auto;
         color: $offwhite;
         letter-spacing: 2px;

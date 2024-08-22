@@ -54,17 +54,23 @@
         height: auto;
         width: 100%;
 
+        .page-name-line {
+            display: none;
+        }
+
         ul {
             display: none;
             padding: 0;
         }
     }
 
-    .h1
+    h1
          { font-family: "Montserrat";
-            font-size: 20px;
-            display: flex;
-            margin-left: 0%;    
+            font-size: 35px;
+            display: block;
+            margin-left: 0%;
+            padding-bottom: 0;
+            margin-bottom: 5%;    
         }
     
 }
@@ -202,7 +208,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center; 
-        width: auto;
+        width: 100%;
+        padding: 5% 30%;
     }
 
     .big-heading {
